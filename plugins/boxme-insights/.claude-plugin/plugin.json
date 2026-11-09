@@ -1,0 +1,23 @@
+{
+  "name": "boxme-insights",
+  "displayName": "Boxme Insights",
+  "version": "0.1.0",
+  "description": "Ask about your Boxme sales, warehouse operations, delivery and fulfillment fees in plain language. Answers come only from your own Boxme Insights dashboards and live reports.",
+  "author": {
+    "name": "Boxme",
+    "url": "https://boxme.asia"
+  },
+  "homepage": "https://insights.boxme.asia/mcp",
+  "repository": "https://github.com/Boxme-Global/boxme-insights-plugin",
+  "license": "MIT",
+  "keywords": [
+    "boxme",
+    "fulfillment",
+    "ecommerce",
+    "analytics",
+    "logistics"
+  ],
+  "privacyPolicyUrl": "https://boxme.asia/privacy-policy/",
+  "termsOfServiceUrl": "https://boxme.asia/terms-of-service/",
+  "documentationUrl": "https://insights.boxme.asia/mcp"
+}

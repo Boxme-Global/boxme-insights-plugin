@@ -1,0 +1,15 @@
+{
+  "name": "boxme",
+  "owner": {
+    "name": "Boxme",
+    "url": "https://boxme.asia"
+  },
+  "description": "Boxme plugins for Claude.",
+  "plugins": [
+    {
+      "name": "boxme-insights",
+      "source": "./plugins/boxme-insights",
+      "description": "Boxme Insights for sellers: sales, warehouse operations, delivery and fulfillment fees from your own data."
+    }
+  ]
+}

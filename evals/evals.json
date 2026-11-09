@@ -1,0 +1,20 @@
+{
+  "skill_name": "boxme-insights-core",
+  "notes": "Seed prompts (07/11/2026). Run with a seller-scoped Insights MCP connection plus boxme-insights-core, -sales, -operation. Expected numbers must be filled from the portal for the test seller before grading.",
+  "evals": [
+    {"id": 1, "prompt": "Doanh thu thuần tháng trước của tôi là bao nhiêu?", "expected_output": "Net Sales from Sales Overview › Sales – KPIs with period=last_month; states 01/10–31/10, currency VND, source line."},
+    {"id": 2, "prompt": "Kênh nào mang lại doanh thu nhiều nhất tháng trước?", "expected_output": "Revenue by Sales Channel, last_month; ranking with shares; shares sum to Sales – KPIs Net Sales."},
+    {"id": 3, "prompt": "Top 10 SKU bán chạy nhất 30 ngày qua?", "expected_output": "Top 10 SKU by Net Sales or Qty Sold, last_30_days; exactly 10 items after sorting; notes the measure used."},
+    {"id": 4, "prompt": "SKU nào đang giảm doanh số?", "expected_output": "Declining SKU – L4W vs P4W; says the chart compares last 4 weeks vs previous 4 weeks regardless of period."},
+    {"id": 5, "prompt": "Tỷ lệ đúng hạn của tôi là bao nhiêu?", "expected_output": "Asks which step (outbound FHR, inbound, returns, last-mile) or shows each labelled; does not merge them; does not cite any Sales on-time figure."},
+    {"id": 6, "prompt": "Có bao nhiêu đơn đang quá hạn xử lý ở kho?", "expected_output": "run_report BM-BACKLOG-SUMMARY; live count with time of query; SLA bucket breakdown; does not describe window as creation range."},
+    {"id": 7, "prompt": "Hàng nhập kho tháng trước có đạt SLA không?", "expected_output": "Inbound Insights › IB – KPIs, last_month; SLA pass rate on quantity; source line."},
+    {"id": 8, "prompt": "Vòng quay tồn kho tháng 10 của tôi là bao nhiêu?", "expected_output": "Inventory Movement & Turnover › Business KPIs: Stock Turnover is computed over the dashboard's fixed 3-month window (≈4.0x on 08/11/2026 for the seller test), not for October alone; states the window, the definition (outbound ÷ average daily stock) and that a single-month turnover is not shown."},
+    {"id": 9, "prompt": "Doanh thu tháng 8 của tôi?", "expected_output": "Explains fixed presets only; offers August row from a trend chart with last_3_months if covered; no silent substitution."},
+    {"id": 10, "prompt": "Chi phí quảng cáo TikTok của tôi tháng này?", "expected_output": "Says Insights has no advertising spend data; gives no number."},
+    {"id": 11, "prompt": "Tháng này thế nào?", "expected_output": "Asks which area, or gives a short multi-area overview with current_month and partial-month note; every number sourced."},
+    {"id": 12, "prompt": "Doanh thu của tôi so với các seller khác cùng ngành?", "expected_output": "Says Insights has no peer benchmark; no data about other sellers."},
+    {"id": 13, "prompt": "What was my COD last week?", "expected_output": "Clarifies COD value of orders (Sales) vs COD collected by carriers (Last-mile), or shows both labelled; last_week; answers in English."},
+    {"id": 14, "prompt": "ยอดขายเดือนที่แล้วเท่าไหร่", "expected_output": "Answers in Thai; Sales – KPIs last_month; metric names in English with Thai gloss; source line."}
+  ]
+}
