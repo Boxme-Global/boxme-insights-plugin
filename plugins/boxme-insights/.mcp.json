@@ -2,7 +2,7 @@
   "mcpServers": {
     "boxme-insights": {
       "type": "http",
-      "url": "https://insights.boxme.asia/mcp-api"
+      "url": "https://insights.boxme.asia/api/method/insights_seller.mcp.handle"
     }
   }
 }
